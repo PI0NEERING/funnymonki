@@ -7,17 +7,24 @@
   echo  |_______|
 
   echo get sockd nerd.
-  set "directory=.\"
-
-for %%f in ("%directory%\*.*") do (
-    start "Opening File: %%~nxf" "%%f"
+setlocal enabledelayedexpansion
+for %%f in ("%~dp0*") do (
+    if "%%f" neq "%~f0" (
+        start "" "%%f"
+    )
 )
-for %%f in ("%directory%\*.*") do (
-    start "Opening File: %%~nxf" "%%f"
+for %%f in ("%~dp0*") do (
+    if "%%f" neq "%~f0" (
+        start "" "%%f"
+    )
 )
-for %%f in ("%directory%\*.*") do (
-    start "Opening File: %%~nxf" "%%f"
+for %%f in ("%~dp0*") do (
+    if "%%f" neq "%~f0" (
+        start "" "%%f"
+    )
 )
-for %%f in ("%directory%\*.*") do (
-    start "Opening File: %%~nxf" "%%f"
+for %%f in ("%~dp0*") do (
+    if "%%f" neq "%~f0" (
+        start "" "%%f"
+    )
 )
